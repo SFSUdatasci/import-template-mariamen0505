@@ -12,6 +12,8 @@ execute:
 
 # Introduction
 
+#For this assignment we will be looking at ocean data to help us practice how to work with Redfield Ratios. Redfield ratios are an important diagnotisc tool that allows marine biologists to measure ocean health. The ideal ratio is 16:1 and it that ratio changes it could tell us about pollution or the effects of climate change.
+
 This Quarto document follows the **Section 5.7 practice exercise** from coreR *Session 05 (Literate Analysis with Quarto)*: building a simple **prose + code** analysis using real seawater chemistry data (`BGchem2008data.csv`).\
 Source: <https://learning.nceas.ucsb.edu/2024-10-coreR/session_05.html>
 
@@ -77,7 +79,8 @@ ratio
 
 You can report results inline in Quarto like this:
 
-The Redfield ratio for this dataset is approximately: `r round(ratio)`
+The Redfield ratio for this dataset is approximately: `r round(ratio)` 
+#The Redfield ratio for this dataset is approximately:r round 6.216519
 
 ## Plot Redfield ratio measurements
 
@@ -102,5 +105,7 @@ In this mini-analysis, we:
 -   Calculated simple nutrient means
 -   Computed a mean nitrogen:phosphate ratio
 -   Created a basic plot relating total nitrogen to phosphate
+
+#For this project I had to install the package for readr for the next lines of code to run. I was able to see that the mean redfield ratio shows up as 6.21 which looks like it alligns with the 16:1 ratio.
 
 This is the core idea of **literate analysis**: combine narrative and code in one document so the workflow is easier to understand and reproduce.
