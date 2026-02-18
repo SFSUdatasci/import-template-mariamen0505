@@ -121,6 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
+<p>#For this assignment we will be looking at ocean data to help us practice how to work with Redfield Ratios. Redfield ratios are an important diagnotisc tool that allows marine biologists to measure ocean health. The ideal ratio is 16:1 and it that ratio changes it could tell us about pollution or the effects of climate change.</p>
 <p>This Quarto document follows the <strong>Section 5.7 practice exercise</strong> from coreR <em>Session 05 (Literate Analysis with Quarto)</em>: building a simple <strong>prose + code</strong> analysis using real seawater chemistry data (<code>BGchem2008data.csv</code>).<br>
 Source: <a href="https://learning.nceas.ucsb.edu/2024-10-coreR/session_05.html" class="uri">https://learning.nceas.ucsb.edu/2024-10-coreR/session_05.html</a></p>
 <section id="about-the-data" class="level2">
@@ -187,7 +188,7 @@ Source: <a href="https://learning.nceas.ucsb.edu/2024-10-coreR/session_05.html" 
 </div>
 </div>
 <p>You can report results inline in Quarto like this:</p>
-<p>The Redfield ratio for this dataset is approximately: 6</p>
+<p>The Redfield ratio for this dataset is approximately: 6 #The Redfield ratio for this dataset is approximately:r round 6.216519</p>
 </section>
 <section id="plot-redfield-ratio-measurements" class="level2">
 <h2 class="anchored" data-anchor-id="plot-redfield-ratio-measurements">Plot Redfield ratio measurements</h2>
@@ -220,6 +221,7 @@ Source: <a href="https://learning.nceas.ucsb.edu/2024-10-coreR/session_05.html" 
 <li>Computed a mean nitrogen:phosphate ratio</li>
 <li>Created a basic plot relating total nitrogen to phosphate</li>
 </ul>
+<p>#For this project I had to install the package for readr for the next lines of code to run. I was able to see that the mean redfield ratio shows up as 6.21 which looks like it alligns with the 16:1 ratio.</p>
 <p>This is the core idea of <strong>literate analysis</strong>: combine narrative and code in one document so the workflow is easier to understand and reproduce.</p>
 </section>
 
