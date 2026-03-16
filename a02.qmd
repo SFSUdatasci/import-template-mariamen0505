@@ -1,14 +1,13 @@
 ---
 title: "Examining Tidy Data : Drosophila development leithality dataset"
 author: Maria Mendoza
+date: March 16
 format: html
 editor: visual
 ---
 
-
-# Introduction 
-# This document examines two different flies with different genes. One is the control and the other is the experimental. What's documented is at what stage they developed into and it could have either been a non hatched embryo, 3rd instar larva, and an adult fly. As well as the counts for how many died or remained alive. 
-
+Introduction 
+# This document examines two different flies with different genes. One is the control and the other is the experimental. What's documented is at what stage they developed into and it could have either been a non hatched embryo, 3rd instar larva, and an adult fly. As well as the counts for how many died or remained alive.
 
 Load the libraries
 
@@ -18,22 +17,17 @@ library(tidyr)
 library(readr)
 ```
 
-
 ```{r}
 # read the data
 miroKD_Leithality <- read_csv ("data/raw/Leithality_Assay_miro.csv")
 ```
 
-# I went ahead and I checked to make sure the data was okay and it didn't have any blank slots which it did not. 
+# I went ahead and I checked to make sure the data was okay and it didn't have any blank slots which it did not.
 
 # Analysis
-# The dataset follows tidy data principles because each variable is in a column, each observation is in a row. The variables (columns) are replicate, genotype, stage, death, and alive. The rows show one observation. 
 
+# The dataset follows tidy data principles because each variable is in a column, each observation is in a row. The variables (columns) are replicate, genotype, stage, death, and alive. The rows show one observation.
 
 # Conclusion
-# To conclude, the "Leithality_Assay_miro" dataset does follow the tidy data rules and there are no foreign keys in this dataset. All in all this is a good dataset to analyze using R. 
 
-
-
-
-
+# To conclude, the "Leithality_Assay_miro" dataset does follow the tidy data rules and there are no foreign keys in this dataset. All in all this is a good dataset to analyze using R.
