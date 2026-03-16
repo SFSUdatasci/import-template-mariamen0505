@@ -82,9 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#this-document-examines-two-different-flies-with-different-genes.-one-is-the-control-and-the-other-is-the-experimental.-whats-documented-is-at-what-stage-they-developed-into-and-it-could-have-either-been-a-non-hatched-embryo-3rd-instar-larva-and-an-adult-fly.-as-well-as-the-counts-for-how-many-died-or-remained-alive." id="toc-this-document-examines-two-different-flies-with-different-genes.-one-is-the-control-and-the-other-is-the-experimental.-whats-documented-is-at-what-stage-they-developed-into-and-it-could-have-either-been-a-non-hatched-embryo-3rd-instar-larva-and-an-adult-fly.-as-well-as-the-counts-for-how-many-died-or-remained-alive." class="nav-link" data-scroll-target="#this-document-examines-two-different-flies-with-different-genes.-one-is-the-control-and-the-other-is-the-experimental.-whats-documented-is-at-what-stage-they-developed-into-and-it-could-have-either-been-a-non-hatched-embryo-3rd-instar-larva-and-an-adult-fly.-as-well-as-the-counts-for-how-many-died-or-remained-alive.">This document examines two different flies with different genes. One is the control and the other is the experimental. What’s documented is at what stage they developed into and it could have either been a non hatched embryo, 3rd instar larva, and an adult fly. As well as the counts for how many died or remained alive.</a></li>
-  <li><a href="#i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not." id="toc-i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not." class="nav-link" data-scroll-target="#i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not.">I went ahead and I checked to make sure the data was okay and it didn’t have any blank slots which it did not.</a></li>
+  <li><a href="#i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not." id="toc-i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not." class="nav-link active" data-scroll-target="#i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not.">I went ahead and I checked to make sure the data was okay and it didn’t have any blank slots which it did not.</a></li>
   <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
   <li><a href="#the-dataset-follows-tidy-data-principles-because-each-variable-is-in-a-column-each-observation-is-in-a-row.-the-variables-columns-are-replicate-genotype-stage-death-and-alive.-the-rows-show-one-observation." id="toc-the-dataset-follows-tidy-data-principles-because-each-variable-is-in-a-column-each-observation-is-in-a-row.-the-variables-columns-are-replicate-genotype-stage-death-and-alive.-the-rows-show-one-observation." class="nav-link" data-scroll-target="#the-dataset-follows-tidy-data-principles-because-each-variable-is-in-a-column-each-observation-is-in-a-row.-the-variables-columns-are-replicate-genotype-stage-death-and-alive.-the-rows-show-one-observation.">The dataset follows tidy data principles because each variable is in a column, each observation is in a row. The variables (columns) are replicate, genotype, stage, death, and alive. The rows show one observation.</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
@@ -119,11 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-</section>
-<section id="this-document-examines-two-different-flies-with-different-genes.-one-is-the-control-and-the-other-is-the-experimental.-whats-documented-is-at-what-stage-they-developed-into-and-it-could-have-either-been-a-non-hatched-embryo-3rd-instar-larva-and-an-adult-fly.-as-well-as-the-counts-for-how-many-died-or-remained-alive." class="level1">
-<h1>This document examines two different flies with different genes. One is the control and the other is the experimental. What’s documented is at what stage they developed into and it could have either been a non hatched embryo, 3rd instar larva, and an adult fly. As well as the counts for how many died or remained alive.</h1>
+<p>Introduction # This document examines two different flies with different genes. One is the control and the other is the experimental. What’s documented is at what stage they developed into and it could have either been a non hatched embryo, 3rd instar larva, and an adult fly. As well as the counts for how many died or remained alive.</p>
 <p>Load the libraries</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -134,7 +128,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read the data</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>miroKD_Leithality <span class="ot">&lt;-</span> <span class="fu">read_csv</span> (<span class="st">"data/raw/Leithality_Assay_miro.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
 <section id="i-went-ahead-and-i-checked-to-make-sure-the-data-was-okay-and-it-didnt-have-any-blank-slots-which-it-did-not." class="level1">
 <h1>I went ahead and I checked to make sure the data was okay and it didn’t have any blank slots which it did not.</h1>
 </section>
