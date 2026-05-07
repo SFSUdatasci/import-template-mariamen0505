@@ -1,0 +1,41 @@
+﻿replicate,genotype,stage,death,alive
+1a,MiroKD,Non-hatched,30,55
+1a,MiroKD,3rd Instar,38,17
+1a,MiroKD,Pupae,2,15
+1a,MiroKD,Adult Fly,2,15
+2a,MiroKD,Non-hatched,55,29
+2a,MiroKD,3rd Instar,11,18
+2a,MiroKD,Pupae,6,12
+2a,MiroKD,Adult Fly,1,11
+2b,MiroKD,Non-hatched,58,31
+2b,MiroKD,3rd Instar,14,17
+2b,MiroKD,Pupae,6,11
+2b,MiroKD,Adult Fly,2,9
+3a,MiroKD,Non-hatched,43,34
+3a,MiroKD,3rd Instar,19,19
+3a,MiroKD,Pupae,2,13
+3a,MiroKD,Adult Fly,0,13
+4a,MiroKD,Non-hatched,31,49
+4a,MiroKD,3rd Instar,33,16
+4a,MiroKD,Pupae,0,16
+4a,MiroKD,Adult Fly,0,16
+5a,MiroKD,Non-hatched,57,23
+5a,MiroKD,3rd Instar,12,11
+5a,MiroKD,Pupae,1,10
+5a,MiroKD,Adult Fly,0,10
+5b,MiroKD,Non-hatched,43,38
+5b,MiroKD,3rd Instar,24,14
+5b,MiroKD,Pupae,0,14
+5b,MiroKD,Adult Fly,0,14
+1a,Ore-R,Non-hatched,35,65
+1a,Ore-R,3rd Instar,22,43
+1a,Ore-R,Pupae,0,43
+1a,Ore-R,Adult Fly,0,43
+2a,Ore-R,Non-hatched,18,82
+2a,Ore-R,3rd Instar,21,61
+2a,Ore-R,Pupae,0,45
+2a,Ore-R,Adult Fly,0,45
+3a,Ore-R,Non-hatched,18,82
+3a,Ore-R,3rd Instar,14,68
+3a,Ore-R,Pupae,0,55
+3a,Ore-R,Adult Fly,0,55
