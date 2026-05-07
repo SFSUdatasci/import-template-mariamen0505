@@ -6,10 +6,9 @@ editor: visual
 
 # Introduction
 
-#For this assignment we will be looking at data to help us practice how to work with dplyr and tidyr functions to help us clean and wrangle data for analysis. There are many tools out there to help us format our data so that it's easy to analyze. That is why we use these two functions (dplyr and tidyr) because it's a powerful package that has lots of functions that allow for quick reformatting. Who doesn't want to be a fast and an effective data analyst? 
+#For this assignment we will be looking at data to help us practice how to work with dplyr and tidyr functions to help us clean and wrangle data for analysis. There are many tools out there to help us format our data so that it's easy to analyze. That is why we use these two functions (dplyr and tidyr) because it's a powerful package that has lots of functions that allow for quick reformatting. Who doesn't want to be a fast and an effective data analyst?
 
-This Quarto document follows the **Section 6.15 Now all together exercise** from coreR *Session 06 (Cleaning and Wrangling Data)*: showing analysis of how and what can be done with dplyr and tidyr 
-Source: <https://nceas-learning-hub.github.io/sfsu_data_sci/s08_r_tidyverse_clean_wrangle.html#now-all-together>
+This Quarto document follows the **Section 6.15 Now all together exercise** from coreR *Session 06 (Cleaning and Wrangling Data)*: showing analysis of how and what can be done with dplyr and tidyr Source: <https://nceas-learning-hub.github.io/sfsu_data_sci/s08_r_tidyverse_clean_wrangle.html#now-all-together>
 
 ## About the data
 
@@ -18,7 +17,7 @@ The data that we will be working with is a tidied up version of a data set from 
 -   Date downloaded: March 5, 2025
 -   Download source: <https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1>
 
-We will explore how to use certain functions to make the data easier to understand as well as being able to visually see the data in a way that makes sense. 
+We will explore how to use certain functions to make the data easier to understand as well as being able to visually see the data in a way that makes sense.
 
 ## Setup
 
@@ -29,10 +28,10 @@ library(dplyr)
 library(tidyr)
 library(readr)
 ```
-After checking that both packages were installed properly. We now know that we can proceed. 
+
+After checking that both packages were installed properly. We now know that we can proceed.
 
 # Read in the data
-
 
 ```{r}
 catch_original <- read_csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1")
@@ -58,30 +57,28 @@ mean_region <- catch_original %>%
 
 head(mean_region)
 ```
+
 ## Analysis of code line by line
-catch_original <- read_csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1") #This line of code calls in the data set through the link and it stores it in a variable called catch_original.
 
-mean_region <- catch_original %>%  #This line of code uses the pipeline operator %>% which is a powerful way to chain together operations. 
+catch_original \<- read_csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1") #This line of code calls in the data set through the link and it stores it in a variable called catch_original.
 
-  select(-All, -notesRegCode) %>%   #This line of code uses the select function to choose what columns you don't want by putting a minus sign.
-  
-  mutate(Chinook = if_else(Chinook == "I", "1", Chinook)) %>%   #This line is looking at the Chinook column and what the if else statement is doing is that if it detects a 1 it will change the value of 1 if the value is equal to I.
-  
-  mutate(Chinook = as.numeric(Chinook)) %>%     #This line of code is using the as.numeric to turn the character representations of numbers to numeric typed values. 
-  
-  
-  pivot_longer(-c(Region, Year),         #This line is pivoting colums.
-               names_to = "species",     #This line is creating the coulmns names that you are pivoting over.
-               values_to = "catch") %>%.  #This line is the name of the column that you created from values which are being pivoted over.
-               
-               
-  mutate(catch = catch*1000) %>%      #This line is telling us that the catch is being multiplied by 1000.
-  
-  group_by(Region) %>%               #This line is telling us that the average catch is being calculated per region. 
-  
-  summarize(mean_catch = mean(catch)) %>%  #This line is telling us that the summarize function is used to combine the mean of catch for the perspective region. As well as that the column names mean(catch) will be named mean_catch.
-  
-  arrange(desc(mean_catch))  #This line is telling us that it will be aranged in a certain way but the desc is telling us that it will be sorted in the reverse order.
+mean_region \<- catch_original %\>% #This line of code uses the pipeline operator %\>% which is a powerful way to chain together operations.
+
+select(-All, -notesRegCode) %\>% #This line of code uses the select function to choose what columns you don't want by putting a minus sign.
+
+mutate(Chinook = if_else(Chinook == "I", "1", Chinook)) %\>% #This line is looking at the Chinook column and what the if else statement is doing is that if it detects a 1 it will change the value of 1 if the value is equal to I.
+
+mutate(Chinook = as.numeric(Chinook)) %\>% #This line of code is using the as.numeric to turn the character representations of numbers to numeric typed values.
+
+pivot_longer(-c(Region, Year), #This line is pivoting colums. names_to = "species", #This line is creating the coulmns names that you are pivoting over. values_to = "catch") %\>%. #This line is the name of the column that you created from values which are being pivoted over.
+
+mutate(catch = catch\*1000) %\>% #This line is telling us that the catch is being multiplied by 1000.
+
+group_by(Region) %\>% #This line is telling us that the average catch is being calculated per region.
+
+summarize(mean_catch = mean(catch)) %\>% #This line is telling us that the summarize function is used to combine the mean of catch for the perspective region. As well as that the column names mean(catch) will be named mean_catch.
+
+arrange(desc(mean_catch)) #This line is telling us that it will be aranged in a certain way but the desc is telling us that it will be sorted in the reverse order.
 
 head(mean_region) #This line is telling us that it will show us the top rows of the table (mean).
 
@@ -94,9 +91,8 @@ The table showing the mean_region is showing the different regions where the fis
 In this mini-analysis, we:
 
 -   Loaded packages/libraries in a dedicated setup chunk
--   Read in catch_original <- read_csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1")
+-   Read in catch_original \<- read_csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/df35b.302.1")
 -   Calculated means of fish per region
-
 
 #For this project I had to make sure the package for readr, tidyr, and dplyr for the next lines of code to run. I was able to see that the mean of fish per region (SSE, PWS, SOP, etc.).
 
