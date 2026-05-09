@@ -1,0 +1,10 @@
+---
+title: "Decision log"
+editor: visual
+---
+
+## Decision log
+
+#Decision #1: ggspatial Using this "ggspatial" it made it easier to see and know the relationships between the locations and data.
+
+#Decision #2: Different ways to view data Using ggplot2 and geom_sf made it so that we could see the data in a clean way and leaflet so we could play with the data by being able to zoom and see all the features the maps offer.
